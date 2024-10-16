@@ -10,6 +10,9 @@ public class Calculator {
         return a * b;
     }
     public static double division(int a, int b) {
+        if (b == 0) {
+            throw new ArithmeticException("You cannot divide by zero!");
+        }
         return (double) a / b;
     }
 }
